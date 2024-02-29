@@ -1,0 +1,39 @@
+<p>Here are the JOB DETAILS from AAFREEN's account</p>
+ 
+<div class="dropdown btn dropdown-toggle">
+    <button>Accounts</button>
+    <ul class="dropdown-list">
+      <li><a routerLink="/aafreen" >Aafreen</a></li>
+      <li><a routerLink="/testjenkins" >TestJenkins</a></li>
+      <li><a routerLink="/supriya">Supriya</a></li>
+    </ul>
+  </div>
+
+
+<div ><h2>TOTAL JOBS=><i class="bi bi-clipboard-data"></i>{{jobcount.value}}</h2></div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>_id</th>
+        <th>_class</th>
+        <th>Job Name</th>
+        <th>status</th>
+        
+        <!-- Add more columns for other job details if needed--> 
+      </tr>
+     
+    </thead>
+    <tbody>
+      <tr *ngFor="let job of jobs">
+        <td>{{job._id}}</td>
+        <td>{{job._class}}</td>
+        <td>{{ job.name }}</td>
+        <td>{{ job.color }}</td>
+      
+        
+        <!-- Add more cells for other job details if needed -->
+      </tr>
+      
+    </tbody>
+  </table>

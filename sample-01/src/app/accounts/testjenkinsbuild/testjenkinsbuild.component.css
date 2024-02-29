@@ -1,0 +1,78 @@
+ 
+  /*table*/
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  /* Style for table header cells */
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  /* Style for table data cells */
+  td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+
+  /* Alternate row background color */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+
+
+/*dropdown styling*--------------------------------------*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the dropdown button */
+.dropdown button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for the dropdown list */
+.dropdown .dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 5px 0;
+  list-style: none;
+  margin: 0;
+  display: none;
+}
+
+/* Styling for the list items */
+.dropdown .dropdown-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Hover effect on the list items */
+.dropdown .dropdown-list li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Show the list when hovering over the dropdown button */
+.dropdown:hover .dropdown-list {
+  display: block;
+}
+

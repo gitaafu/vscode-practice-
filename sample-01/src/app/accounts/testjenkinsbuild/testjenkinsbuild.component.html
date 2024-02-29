@@ -1,0 +1,40 @@
+<p>Here are the BUILD DETAILS from TEST_JENKINS's account</p>
+ 
+<div class="dropdown btn dropdown-toggle">
+    <button>Accounts</button>
+    <ul class="dropdown-list">
+      <li><a routerLink="/aafreenbuild" >Aafreen</a></li>
+      <li><a routerLink="/testjenkinsbuild" >TestJenkins</a></li>
+      <li><a routerLink="/supriya">Surpiya</a></li>
+    </ul>
+  </div>
+
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>URL</th>
+        <th>STATUS</th>
+        <th>LAST BUILD</th>
+        <th>LAST_BUILD_STATUS</th>
+       
+        
+        <!-- Add more columns for other job details if needed --> 
+      </tr>
+     
+    </thead>
+    <tbody>
+      <tr *ngFor="let job of jobs">
+        <td>{{job.name}}</td>
+        <td>{{job.url}}</td>
+        <td>{{ job.status }}</td>
+        <td>{{tlastbuild(job.name) }}</td>
+        <td>{{tlastbuildstatus(job.name)}}</td>
+     <!-- Add more cells for other job details if needed -->
+      </tr>
+      
+    </tbody>
+  </table>

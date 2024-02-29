@@ -1,0 +1,65 @@
+
+/*dropdown styling*--------------------------------------*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Styling for the dropdown button */
+  .dropdown button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styling for the dropdown list */
+  .dropdown .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+    list-style: none;
+    margin: 0;
+    display: none;
+  }
+  
+  /* Styling for the list items */
+  .dropdown .dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect on the list items */
+  .dropdown .dropdown-list li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Show the list when hovering over the dropdown button */
+  .dropdown:hover .dropdown-list {
+    display: block;
+  }
+  
+/*---------table styling--------*/
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
